@@ -1,3 +1,3 @@
 # My resume
 
-About me [here](https://stucle.github.io/minhhuyntu).
+About me [here](https://ntuminhhuy.github.io/resume).
