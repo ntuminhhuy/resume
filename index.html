@@ -15,7 +15,6 @@
             </div>
             <nav>
                 <ul>
-                    <!-- <li><a href="#profile">Profile</a></li> -->
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Experiences</a></li>
                     <li><a href="#education">Education</a></li>
@@ -43,135 +42,215 @@
         <section id="skills" class="skills">
             <h2>Skillsets</h2>
             <ul><li>
-                <p><strong>Programming languages and frameworks:</strong> Java 11, Spring Boot, JPA, graphQL, Quarkus, Kotlin, Python...</p>
-                <p><strong>Databases:</strong> MongoDB, Postgres, MySQL</p>
-                <p><strong>Microservices skills:</strong> RabbitMQ, Google Pub/Sub, Redis, RESTful, Elasticsearch, Grafana, Kibana</p>
-                <p><strong>Practice skills:</strong> Git, Docker, Log tracing, resource management and monitoring (K8S), problem solving</p>
-                <p><strong>Teamwork skills:</strong> SCRUM basic, host the planning or daily meeting, retrospective</p>
+                <div style="margin-left: 10px;">
+                    <p><strong>Programming languages and frameworks:</strong> Java 11, Spring Boot, JPA, graphQL, Quarkus, Kotlin, Python...</p>
+                    <p><strong>Databases:</strong> MongoDB, Postgres, MySQL</p>
+                    <p><strong>Microservices skills:</strong> RabbitMQ, Google Pub/Sub, Redis, RESTful, Elasticsearch, Grafana, Kibana</p>
+                    <p><strong>Practice skills:</strong> Git, Docker, log tracing, resource management and monitoring by k8s</p>
+                    <p><strong>Teamwork skills:</strong> SCRUM basic, host the sprint planning/daily/retrospective meeting</p>
+                </div>
             </li></ul>
             <h3>Extra skills</h2>
             <ul><li>
-                <p>Worked experiences in software and system domains: Telecom-network, payment-ewallet.</p>
-                <p>Problem solving, investigate and apply the high level idea to reality functional in the distributed system.</p>
-                <p>Handle big query and big migration between multiple MongoDB schemas.</p>
-                <p>Cloud storage: GCP, sFTP, AS3</p>
-                <p>Apply Unit Test and Postman script test</p>
-                <p>Work in scrum team, task management in scrum process can adapts the product short-term plan and the long-term roadmap</p>
-                <p>Mobile Application Development</p>
+                <div style="margin-left: 10px;">
+                    <p>Worked experiences in software and system domains: Telecom-network, payment-ewallet.</p>
+                    <p>Problem solving, investigate and apply the high level idea to reality functional in the distributed system.</p>
+                    <p>Handle big query and big migration between multiple MongoDB schemas.</p>
+                    <p>Cloud storage: GCP, sFTP, AS3</p>
+                    <p>Apply Unit Test and Postman script test</p>
+                    <p>Work in scrum team, task management in scrum process can adapts the product short-term plan and the long-term roadmap</p>
+                    <p>Mobile Application Development</p>
+                </div>
             </li></ul>
         </section>
 
         <section id="projects" class="projects">
             <h2>Worked experiences</h2>
             <strong>Backend Development (product domains)</strong>
-            <ul>
-                <li class="project-item">
-                    <a href="https://galaxypay.vn">
-                        <img src="https://pms.galaxypay.vn/assets/media/logos/gid_logo.png"alt="Company Logo">
-                    </a>
-                    <h3>Product name: Galaxy Pay</h3>
-                    <p><strong>Powered by VietJet</strong></p>
-                    <p><strong>Contributed timeline:</strong> August 2024 to present</p>
+            <div class="projects-wrap">
+
+                <!-- payment project -->
+                <div class="projects-item">
+
+                    <div class="project-extend">
+                        <div class="project-logo">
+                            <a href="https://galaxypay.vn">
+                                <img src="https://pms.galaxypay.vn/assets/media/logos/gid_logo.png"alt="Company Logo">
+                            </a>
+                        </div>
+                        <p><strong>Powered by VietJet</strong></p>
+                        <p><strong>Contributed timeline:</strong> August 2024 to present <br> (Tan Binh District)</p>
+                    </div>
+
+                    <h3>Product name: Galaxy Pay ewallet</h3>
                     <p><strong>Project Description:</strong> The e-wallet system for payment, support the quick-charge solution for stakeholder, integrate with 3rd parties</p>
                     <p><strong>Technical Stack:</strong></p>
-                    <p>Microservices architecture based on Spring Boot 3 (Java 21).</p>
-                    <p>Applied Cognito as the engine of Authentic; Dev-Consul configured environment.</p>
-                    <p>3rd payment by QR engine and the VietJet’s modal checkout gateway.</p>
-                    <p>RDB: Postgres; No-SQL: AWS DocumentDB; AWS: OpenSearch, Redis, AS3, Prometheus, Grafana...</p>
-                    <p>Microservices asynchronized message: Kafka for Napas and HD Bank, RabbitMQ for internal side.</p>
-                    <p>Mobile client-side technical: Android SDK, Flutter. Web UI/UX: AngularJs...</p>
+                    <div style="margin-left: 20px;">
+                        <p>Microservices architecture based on Spring Boot 3 (Java 21).</p>
+                        <p>Apply Cognito as the authentic engine; Dev-Consul configured environment.</p>
+                        <p>3rd payment via QR code scan, VietJet payment via modal checkout gateway.</p>
+                        <p>RDB: Postgres, AWS DocumentDB; AWS services: EC2, OpenSearch, Redis, AS3, Prometheus, Grafana...</p>
+                        <p>Microservices asynchronized message: Kafka for Napas and HD Bank, RabbitMQ for internal side.</p>
+                        <p>Mobile client-side applies: Android SDK, Flutter. Web UI/UX applies: AngularJs...</p>
+                    </div>
                     <p><strong>Responsibilities and contributions:</strong></p>
-                    <p>Developed eKYC API and onboarding features when first joined.</p>
-                    <p>Solo the backend e-wallet missions, cover a lots of internal features: QR payment, API, QR management, bank-integration API and 3rd payment billing.</p>
-                    <p>Wrote internal tools, optimize some modules that make be able to automation test.</p>
-                    <p>Completed the incurred documents when communicated with Service Providers.</p>
-                    <p>Support UAT partners, UAT customers.</p>
-                </li>
-                <li class="project-item">
-                    <a href="https://gridsz.com/solutions/availability-overview">
-                        <img src="https://gridsz.b-cdn.net/wp-content/uploads/2024/04/logo_gridsz_black.svg" alt="Company Logo">
-                    </a>
+                    <div style="margin-left: 20px;">
+                        <p>Developed eKYC API and onboarding features when first joined.</p>
+                        <p>Maintanance, enhancement the QR feature integrated to VNPay.</p>
+                        <p>Solo the backend e-wallet missions, cover a lots of internal features: QR management, bank-integration API and 3rd payment billing.</p>
+                        <p>Wrote internal tools, optimize some modules that make be able to automation test.</p>
+                        <p>Completed the incurred documents when communicated with Service Providers.</p>
+                        <p>Support UAT partners, UAT customers.</p>
+                    </div>
+
+                </div>
+
+                <!-- infodation project -->
+                <div class="projects-item">
+
+                    <div class="project-extend">
+                        <div class="project-logo">
+                            <a href="https://gridsz.com/solutions/availability-overview">
+                                <img src="https://gridsz.b-cdn.net/wp-content/uploads/2024/04/logo_gridsz_black.svg" alt="Company Logo">
+                            </a>
+                        </div>
+                        <div style="margin-top: 96px;">
+                            <p><strong>Company name: INFOdation</strong></p>
+                            <p><strong>Contributed timeline:</strong> December 2020 to June 2024 <br> (Nha Trang city)</p>
+                        </div>
+                    </div>
+
                     <h3>Product name: GRIDSZ Availability Check</h3>
-                    <p><strong>Company name: INFOdation</strong> (Nha Trang city)</p>
-                    <p><strong>Contributed timeline:</strong> December 2020 to June 2024</p>
-                    <p><strong>Project Description:</strong> Based on the system serve for DFN telecom. Upgrade, enhance and
-                        scale microservices system that be able to provide the APIs for streaming few millions network data
-                        to big telecom companies.</p>
+                    <p><strong>Project Description:</strong> Based on the system serve for DFN telecom. <br>
+                        Upgrade, enhance and scale microservices system that be able to provide the APIs
+                        for streaming few millions network data to big telecom companies.</p>
                     <p><strong>Technical Stack:</strong></p>
-                    <p>Microservices architecture based on Spring Boot 3, Quarkus 2 (Spring Boot 2.5 before).</p>
-                    <p>Java 17 (Java 8 before) as primary language.</p>
-                    <p>No-SQL database: MongoDB Atlas, caching on Redis.</p>
-                    <p>Message asynchronous: RabbitMQ – heart of microservices, Google Pub/Sub – for integrating with external region.</p>
-                    <p>Internal and temporary environment(s) deploy by K8s, UAT and production are deploy on Google Cloudrun,</p>
-                    <p>CRUD API flexible end-users by RESTful (OpenAPI), graphQL. Adminboard and web portal apply ReactJs.</p>
-                    <p>Used Junit for Unit Test, Mockito for Integration Test, Postman scripts and Python scripts test</p>
+                    <div style="margin-left: 20px;">
+                        <p>Microservices architecture based on Spring Boot 3, Quarkus 2 (Spring Boot 2.5 before).</p>
+                        <p>Java 17 (Java 8 before) as primary language.</p>
+                        <p>No-SQL database: MongoDB Atlas, caching on Redis.</p>
+                        <p>Message asynchronous: RabbitMQ – heart of microservices, Google Pub/Sub – for integrating with external region.</p>
+                        <p>Internal and temporary environment(s) deploy by K8s, UAT and production are deploy on Google Cloudrun,</p>
+                        <p>CRUD API flexible end-users by RESTful (OpenAPI), graphQL. Adminboard and web portal applies ReactJs.</p>
+                        <p>Use Junit 4 and Mockito for Unit Test, Postman scripts and Python scripts test. Apply the Sonar tools for code quality improvement.</p>
+                    </div>
                     <p><strong>Responsibilities and contributions:</strong></p>
-                    <p>Work at consultant role member in the standard SCRUM team. Communicated, answer and support the requests of EU team.</p>
+                    <div style="margin-left: 20px;">
+                        <p>Working as consultant role member in a standard SCRUM team. Communicate, answer and support the requests of EU team.</p>
+                        <p>
+                            Optimized performance for each module in the microservices.
+                            Coordinate the core logic and requirement logic, ensure be able to alignment the base of system or not.
+                        </p>
+                        <p>
+                            Designed metadata by business in microservices flow that fits with multiple format of EU network providers.
+                            Aligned features to compliance the anti-monopoly rule of the T-mobile (US)
+                        </p>
+                        <p>Applied Googlebucket to transfer large data between external side, applied sFTP for internal side</p>
+                        <p>
+                            Developed the cron job to handle data modification schedule adapts with core logic.
+                            Recursive clean cloud storage to reduce cost.
+                        </p>
+                        <p>Upgraded from Java 8 to Java 11.</p>
+                    </div>
+                </div>
+
+
+                <div class="projects-item">
+
+                    <div class="project-extend">
+                        <div class="project-logo">
+                            <a href="https://coconfiber.com">
+                                <img src="https://coconfiber.com/wp-content/uploads/2022/10/CoconFiber-logo.svg"alt="Company Logo">
+                            </a>
+                        </div>
+                        <p><strong>Company name: INFOdation</strong></p>
+                        <p><strong>Contributed timeline:</strong> November 2020 to December 2020 <br> (Nha Trang city)</p>
+                    </div>
+
+                    <h3>Product name: Cocon Routing 3</h3>
                     <p>
-                        Optimized performance for each module in the microservices.
-                        Coordinate the core logic and requirement logic, ensure be able to
-                        alignment the base of system or not.
+                        <strong>Project Description:</strong> The new serverless module in the Cocon Fiber Network,<br>
+                        support for finding the shorted ways when streaming telecom data between network nodes.
                     </p>
-                    <p>
-                        Design metadata by business in microservices flow that fits with multiple format of EU network providers.
-                        Align features to compliance the anti-monopoly rule of the T-mobile (US)
-                    </p>
-                    <p>Applied Googlebucket to transfer large data between external side, applied sFTP for internal side</p>
-                    <p>
-                        Developed the cron job to handle data modification schedule adapts with core logic.
-                        Recursive clean cloud storage to reduce cost.
-                    </p>
-                    <p>Upgraded from Java 8 to Java 11.</p>
-                </li>
+                    <p><strong>Technical Stack:</strong></p>
+                    <div style="margin-left: 20px;">
+                        <p>Microservices architecture based on dotNET core.</p>
+                        <p>Database: Postges, caching by Memcached/Redis/C++ file engine.</p>
+                        <p>Message asynchronous by Kafka.</p>
+                        <p>Test and UAT environment deployed on AWS Lambda</p>
+                    </div>
+                    <p><strong>Responsibilities and contributions:</strong></p>
+                    <div style="margin-left: 20px;">
+                        <p>Catched up BRD and business logic via Spec docs and monolithic source code. </p>
+                        <p>Analysis, research, and follow SA/Techlead's migrating from monolithic to microservices solution.</p> 
+                    </div>
+                </div>
+
+
+                <!-- apps -->
                 <strong>Application Outsourcing</strong>
-                <li class="project-item">
+                <div class="projects-item">
+                    <div class="project-extend">
+                        <div class="project-logo"><img src="https://widosoft.com/wp-content/themes/widosoft/assets/images/logo.svg"alt="Company Logo"></div>
+                        <p><strong>Contributed timeline:</strong> May 2020 to September 2020 <br> (Nha Trang city)</p>
+                    </div>
                     <h3>App name: Neighbourhood Friend Chat Apps</h3>
-                    <p><strong>Company name:</strong> Widosoft</p>
-                    <p><strong>Contributed timeline:</strong> May 2020 to September 2020</p>
                     <p><strong>Project Description:</strong> 
                         Build multiple chat apps that serve the end-users living in the neighboring
                         streets or residence apartment as the according to each age group</p>
                     <p><strong>Technical Stack:</strong></p>
-                    <p>Android SDK API 28 (Java code based), API 29 (Kotlin code based), Gradle libraries management.</p>
-                    <p>Firebase Backend test for SIT environment, PHP Backend server-side.</p>
+                    <div style="margin-left: 20px;">
+                        <p>Android SDK API 28 (Java code based), API 29 (Kotlin code based), Gradle libraries management.</p>
+                        <p>Firebase Backend test for SIT environment, PHP Backend server-side.</p>
+                    </div>
                     <p><strong>Responsibilities and contributions:</strong></p>
-                    <p>Applied RxAndroid asynchronous for data binding.</p>
-                    <p>Optimized UI/UX, research compatible libraries for extend features, store the localdb by Room SQLite.</p>
-                    <p>Applied graphQL API side by RESTful.</p>
-                    <p>Fix bugs, implemented the CRUD functions with RESTful API.</p>
-                </li>
-                <li class="project-item">
+                    <div style="margin-left: 20px;">
+                        <p>Applied RxAndroid asynchronous for data binding.</p>
+                        <p>Optimized UI/UX, research compatible libraries for extend features, store the localdb by Room SQLite.</p>
+                        <p>Applied graphQL API side by RESTful.</p>
+                        <p>Fix bugs, implemented the CRUD functions with RESTful API.</p>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="project-extend">
+                        <div class="project-logo"><img src="https://www.mitsubishielectric.com/fa/shared/gws0001/img/me_logo.svg"></div>
+                        <p><strong>Company name: IVS</strong></p>
+                        <p><strong>Contributed timeline:</strong> From mid-2018 to April 2020 <br> (University's referal)</p>
+                    </div>
                     <h3>App name: Data Inhouse Denokojo, Nagoya, Keyware factory</h3>
-                    <p><strong>Company name: IVS</strong> (university's referal)</p>
-                    <p><strong>Contributed timeline:</strong> From mid-2018 to April 2020</p>
                     <p><strong>Project Description:</strong> 
                         Apply the Windows Form framework to complete the screening data application for the internal computers in the factory house.
                         Big team size in waterfall process, provide software for the FDI (Japan) companies.
                     </p>
                     <p><strong>Technical Stack:</strong></p>
-                    <p>Windows Forms of .NET framework 2.0 and Visual Basic 8.</p>
-                    <p>Swing Abstract Window Toolkit and Java 7.</p>
-                    <p>Oracle DB</p>
+                    <div style="margin-left: 20px;">
+                        <p>Windows Forms of .NET framework 2.0 and Visual Basic 8.</p>
+                        <p>Swing Abstract Window Toolkit and Java 7.</p>
+                        <p>Oracle DB</p>
+                    </div>
                     <p><strong>Responsibilities and contributions:</strong></p>
-                    <p>Converted source code from VB6 to VB.NET, VB6 to Java Swing Windows Form.</p>
-                    <p>Writen the script for create SQL data for screening fully format of Katakana, Hirakana.</p>
-                </li>
-            </ul>
+                    <div style="margin-left: 20px;">
+                        <p>Converted source code from VB6 to VB.NET, VB6 to Java Swing Windows Form.</p>
+                        <p>Writen the script for create SQL data for screening fully format of Katakana, Hirakana.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="education">
             <h2>Education</h2>
-            <ul>
-                <li>
+            <div class="education-wrap">
+                <div class="education-item">
                     <h3>Nha Trang University</h3>
-                    <p><strong>Degree:</strong> Infomation technology</p>
+                    <p><strong>Degree:</strong> Infomation Technology</p>
                     <p><strong>Graduation:</strong> 2017</p>
-                </li>
-                <li>
+                </div>
+                <div class="education-item">
                     <h3>Payment Certificate</h3>
                     <p><a href="files/cert.pdf" target="_blank">Anti-Money Laundering Training Course</a></p>
-                <!-- Add more education details as needed -->
-            </ul>
+                </div>
+            </div>
+
         </section>
     </div>
 </body>
